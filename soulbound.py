@@ -31,7 +31,7 @@ def approval():
             # requires two app args (the noop call name and the credentials)
             Assert(Txn.application_args.length() == Int(2)),
             # changes the credentials global state with the second app arg in the array
-            App.globalPut(Bytes("Credentials"), Bytes(Txn.application_args[1])),
+            App.globalPut(Bytes("Credentials"), Txn.application_args[1]),
             # approves sequence
             Return(Int(1)),
         ]
