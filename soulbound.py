@@ -119,7 +119,7 @@ def approval():
         [Txn.application_args[0] == Bytes("Set_Admin"), set_admin],
         [Txn.application_args[0] == Bytes("Mint"), mint],
         [Txn.application_args[0] == Bytes("Transfer"), transfer],
-        [Txn.application_args[0] == Bytrs("Update_Cred", update_cred],
+        [Txn.application_args[0] == Bytes("Update_Cred"), update_credentials],
     )
 
     return program
