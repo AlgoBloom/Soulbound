@@ -1,4 +1,8 @@
-# This example is provided for informational purposes only and has not been audited for security.
+# start with the basic custom asset framework
+# 1 add a requirement that the asset may not be transfered 
+# 2 add a way to update credential information using meta data "a hash or some string"
+    # we could use the array implementation Peter recommended using for the AlgoHUB project
+    # basically we need a bytestring that we are able to update and then retrieve the slices that we want
 
 from pyteal import *
 
