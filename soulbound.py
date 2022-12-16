@@ -13,14 +13,14 @@ def approval():
             App.globalPut(Bytes("AssetName"), Bytes("Bloom Credentials")),
             # g byteslice - unit name is BLT
             App.globalPut(Bytes("UnitName"), Bytes("BL1")),
+            # g byteslice - credentials
+            App.globalPut(Bytes("Credentials"), Bytes("Cred1;Cred2;Cred3")),
             # g int - decimals
             App.globalPut(Bytes("Decimals"), Int(0)),
             # g Int - total supply 
             App.globalPut(Bytes("Total"), Int(1)),
             # g Int - reserve is total amount not sitting in local balance
             App.globalPut(Bytes("GlobalReserve"), Int(1)),
-            # credentials
-            App.globalPut(Bytes("Credentials"), Bytes("Cred1;Cred2;Cred3")),
             # approve sequence
             Return(Int(1)),
         ]
